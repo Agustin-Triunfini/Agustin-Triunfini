@@ -1,0 +1,425 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+/* CONFIG GENERAL */
+
+p {
+  line-height: 20px;
+}
+
+main {
+  padding: 1px;
+  background-color: #FFFDE3;
+}
+
+header {
+  display: flex;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  justify-content: start;
+  margin-left: 50px;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: start;
+  margin-inline: 20px;
+}
+
+.header__icons img {
+  margin-left: 30px;
+}
+
+.header__nav__pags {
+  display: flex;
+}
+
+.header__nav__pags li {
+  list-style-type: none;
+  margin-inline: 10px;
+}
+
+.header__nav__pags a {
+  text-decoration: none;
+  color: #000000;
+  border-radius: 20px;
+  background-color: #21E1E1;
+  font-weight: bold;
+  padding: 15px;
+  margin-inline: 50px;
+}
+
+footer {
+  background-color: rgba(138, 138, 138, 0.726);
+}
+
+.items__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.items__footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.copy {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* PAGINA ALOJAMIENTO */
+
+
+.flex--form {
+  display: flex;
+  justify-content: end;
+}
+
+.titulo--alojamiento {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.opcion1__alojamiento {
+  border: gray solid 1px;
+  display: grid;
+
+}
+
+.servicio1 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.opcion1 p {
+  display: inline-block;
+  height: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opcion1 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px;
+  width: 350px;
+  margin: 0px;
+}
+
+.iframe1 {
+  display: flex;
+  border: #000000 solid 100px;
+  position: relative;
+  margin-left: 100px;
+}
+
+.opcion2__alojamiento {
+  border: #808080 1px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.10fr 1fr 0.10fr;
+  grid-template-areas:
+
+    "titulo_a          titulo_a                titulo_a     titulo_a"
+    "imagen       parrafo__alojamiento  parrafo__alojamiento iframe"
+    "  lista            lista                  lista         lista"
+  ;
+
+
+}
+
+.titulo2 {
+  background-color: red;
+  grid-area: titulo_a;
+}
+
+.parrafo__alojamiento {
+  background-color: green;
+  align-items: center;
+  grid-area: parrafo__alojamiento;
+  display: flex;
+}
+
+.parrafo__alojamiento p {
+  flex-direction: row;
+}
+
+.lista2 {
+  background-color: yellow;
+  grid-area: lista
+}
+
+.lista2 ul li {
+  list-style-type: none;
+}
+
+.iframe2 {
+  background-color: blue;
+  grid-area: iframe;
+  display: flex;
+  align-items: center;
+}
+
+.imagen2 {
+  background-color: pink;
+  grid-area: imagen;
+  max-width: 100%;
+}
+
+
+.opcion3__alojamiento {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: (1fr 1fr 2fr 2fr 2fr 1fr);
+  grid-template-rows: 0.010fr 1fr 0.10fr;
+  grid-template-areas:
+    "titulo3 titulo3 titulo3 titulo3 titulo3"
+    "imagen3 imagen3  parrafo3 parrafo3 iframe3"
+    "lista3 lista3     lista3   lista3  lista3"
+  ;
+}
+
+.titulo3 {
+  background-color: aqua;
+  grid-area: titulo3;
+  padding: 30px;
+}
+
+.imagen3 {
+  background-color: darkred;
+  grid-area: imagen3;
+}
+
+.parrafo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+  grid-area: parrafo3;
+}
+
+.lista3 {
+  background-color: indigo;
+  grid-area: lista3;
+}
+
+.iframe3 {
+  background-color: violet;
+  grid-area: iframe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mdp {
+  width: 240px;
+  height: 180px;
+}
+
+
+/* PAG CONTACTO */
+
+.formulario_contactodiv{
+  display: flex;
+  justify-content: center;
+
+}
+
+.formulario_contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: #000000 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 10px blueviolet;
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 5px 2px;
+}
+
+
+
+.titform {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.submit_contact:hover{
+  width: auto;
+  background-color: #21E1E1;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+/* M.Q GENERAL */
+
+  .header__nav__pags {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  .header__nav__pags li{
+    margin-inline: 3px;
+  }
+
+  .header__nav__pags a{
+    margin-inline: 3px;
+  }
+
+  .header__icons {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  .header__icons img {
+    margin-inline: 5px;
+
+  }
+
+  /* M.Q Contacto */
+  .imagenrandom{
+    display:flex ;
+    margin-inline: 170px;
+  }
+
+  .imagenrandom img{
+    width: 500px;
+    height: 100px;
+  }
+ 
+  .checkbox_submit:focus{
+    background-color: #87cefad7;
+  }
+
+  .formulario_contactodiv{
+    width: auto;
+   margin-left: 10px;
+  }
+
+  .formulario_contacto{
+    border-radius: 10px;
+  }
+
+  /* PAG ALOJAMIENTO */
+
+  .titulo--alojamiento{
+    margin-bottom: 20px;
+  }
+
+  .flex--form{
+    display: none;
+  }
+
+  .subtitulo__opcion1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .info__iframe{
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .iframe1{
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .info__iframe ul{
+    margin-top: 20px;
+    margin-left: 50px;
+    list-style-type: none;
+    width: auto;
+    align-items:center;
+  }
+
+  .descripcion__opcion1{
+    background-color: rgba(128, 128, 128, 0.808);
+   border-radius: 5px;
+   padding: 19px;
+  }
+
+  .opcion2__alojamiento{
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 0.10fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo_a titulo_a titulo_a"
+    "imagen parrafo_alojamiento parrafo_alojamiento"
+    " lista iframe ."
+    ;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
+
+  .header__nav__pags {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+  }
+
+  .header__nav__pags a {
+    margin: 3px;
+  }
+
+  .header__nav__pags li {
+    font-size: small;
+  }
+
+  .header__icons {
+    display: none;
+  }
+
+  /* PAGINA CONTACTO */
+
+  .imagenrandom {
+    width: 450px;
+    height: 80px;
+
+  }
+
+  .imagenrandom img{
+    width: 500px;
+    height: 100px;
+  }
+
+}
+
