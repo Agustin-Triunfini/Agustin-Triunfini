@@ -250,6 +250,7 @@ footer {
   border: #000000 1px solid;
   padding: 10px;
   box-shadow: 5px 5px 10px blueviolet;
+  background-color: lightskyblue;
 }
 
 .inputs{
@@ -257,6 +258,29 @@ footer {
   justify-content: center;
   width: 50%;
   margin: 5px 2px;
+}
+
+.publicidad{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.publicidad img{
+ margin-left: 50px;
+ justify-content: center;
+ 
+}
+
+.publicidad{
+  animation: publicidadmovimiento 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes publicidadmovimiento{
+  100% {
+    width: 50%;
+  }
 }
 
 
