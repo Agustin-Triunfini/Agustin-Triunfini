@@ -72,6 +72,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.items__footer img{
+  margin-top: 10px;
+}
+
 .copy {
   text-align: center;
   font-size: 15px;
@@ -260,30 +264,25 @@ footer {
   margin: 5px 2px;
 }
 
-.publicidad{
+.publicidad_div{
   display: flex;
+  justify-content: center;
+}
+
+.publicidad{
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.publicidad img{
- margin-left: 50px;
- justify-content: center;
- 
-}
-
 .publicidad{
-  animation: publicidadmovimiento 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes publicidadmovimiento{
-  100% {
-    width: 50%;
-  }
+  transition: 1s;
 }
 
 
+.publicidad:hover{
+  border: 2px green;
+ box-shadow: rgb(78, 238, 238) 10px 10px 20px;
+}
 
 .titform {
   display: flex;
